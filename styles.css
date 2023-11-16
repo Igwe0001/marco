@@ -47,12 +47,19 @@ body {
 }
 
 .banner-info > span {
-  font-size: clamp(1.1rem, 2.5vw, 1.6rem);
+  font-size: clamp(1.15rem, 2.5vw, 1.6rem);
   color: var(--banner-text);
 }
 
 .banner-button {
   margin-left: 1rem;
+  outline: none;
+  border: none;
+  background-color: transparent;
+}
+
+.banner-button span {
+  color: var(--banner-text);
 }
 /* ................... */
 
@@ -65,27 +72,72 @@ nav {
   /* outline: 1px solid; */
   max-width: 150rem;
   margin: auto;
+  display: flex;
+  justify-content: space-between;
 }
 
 nav ul {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  width: 100%;
+  /* justify-content: space-between; */
   /* outline: 1px solid red; */
   align-items: center;
 }
 
 .nav-list {
   display: flex;
+  flex-direction: column;
   /* outline: 1px solid blue; */
   align-items: center;
 }
 
-.nav-list li{
-    /* outline: 1px solid green; */
+.nav-list li {
+  /* outline: 1px solid green; */
+  outline: 1px solid;
+  margin: 2rem 0;
 }
 
 .nav-list a {
-    font-size: 1.6rem;
-    padding: 2rem;
-    color: #000;
+  font-size: 1.6rem;
+  padding: 2rem;
+  color: #000;
+}
+
+nav {
+  position: absolute;
+
+  width: 100%;
+
+  background: red;
+
+  left: 0;
+padding: 2rem;
+  height: 100%;
+
+  top: 0;
+}
+
+nav ul {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Media query  */
+
+@media screen and (min-width: 768px) {
+  .navigation-button {
+    display: none;
+  }
+
+  nav ul {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .nav-list {
+    flex-direction: row;
+  }
 }
