@@ -1,0 +1,57 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --banner-background: #722257;
+  --banner-text: #cdb5a7;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  font-size: 1.6rem;
+  width: 100%;
+}
+
+/* header-banner */
+.banner-container {
+    width: 100%;
+    height: 7rem;
+    background: var(--banner-background);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner {
+    display: flex;
+    width: 100%;
+    padding: 1rem 2rem;
+}
+
+.banner-info{
+    flex: 2;
+    text-align: center;
+}
+
+.banner-info > span {
+    text-transform: uppercase;
+    font-size: clamp(1.1rem, 2.5vw, 1.6rem);
+    color: var(--banner-text);
+}
+
+.banner-button{
+margin-left: 1rem;
+}
+
+
