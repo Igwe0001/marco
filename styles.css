@@ -22,6 +22,7 @@ body {
 
 body {
   font-size: 1.6rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   width: 100%;
 }
 
@@ -61,7 +62,7 @@ header {
 }
 
 nav {
-  outline: 1px solid;
+  /* outline: 1px solid; */
   max-width: 150rem;
   margin: auto;
 }
@@ -69,21 +70,22 @@ nav {
 nav ul {
   display: flex;
   justify-content: space-between;
-  outline: 1px solid red;
+  /* outline: 1px solid red; */
   align-items: center;
 }
 
 .nav-list {
   display: flex;
-  outline: 1px solid blue;
+  /* outline: 1px solid blue; */
   align-items: center;
 }
 
 .nav-list li{
-    outline: 1px solid green;
+    /* outline: 1px solid green; */
 }
 
 .nav-list a {
     font-size: 1.6rem;
     padding: 2rem;
+    color: #000;
 }
