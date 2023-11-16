@@ -99,7 +99,7 @@ nav ul {
 }
 
 .nav-list a {
-  font-size: 1.6rem;
+  font-size: 2.6rem;
   padding: 2rem;
   color: #000;
 }
@@ -112,7 +112,7 @@ nav {
   background: red;
 
   left: 0;
-padding: 2rem;
+  padding: 2rem;
   height: 100%;
 
   top: 0;
@@ -139,5 +139,9 @@ nav ul {
 
   .nav-list {
     flex-direction: row;
+  }
+
+  .nav-list a{
+    font-size: 1.6rem;
   }
 }
