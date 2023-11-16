@@ -27,6 +27,10 @@ body {
 }
 
 /* header-banner */
+.navigation-button span {
+  font-size: 3rem;
+}
+
 .banner-container {
   width: 100%;
   background: var(--banner-background);
@@ -104,6 +108,10 @@ nav ul {
   color: #000;
 }
 
+.shopping-bag span {
+  font-size: 3rem;
+}
+
 nav {
   position: absolute;
 
@@ -141,7 +149,7 @@ nav ul {
     flex-direction: row;
   }
 
-  .nav-list a{
+  .nav-list a {
     font-size: 1.6rem;
   }
 }
