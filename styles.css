@@ -66,6 +66,7 @@ main {
   display: flex;
   width: 100%;
   padding: 0.8rem 2rem;
+  align-items: center;
 }
 
 .banner-info {
@@ -185,10 +186,11 @@ ul {
   align-items: center;
   justify-content: center;
   width: 100%;
+  margin-top: 2rem;
 }
 
 .logo img {
-  width: 30%;
+  width: 40%;
   max-width: 70rem;
   min-width: 25rem;
 }
@@ -227,13 +229,9 @@ footer {
 
 /* Media query  */
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 980px) {
   nav {
     align-items: center;
-  }
-
-  .unit {
-    display: none;
   }
 
   .ul-change {
