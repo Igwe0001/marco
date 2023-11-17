@@ -105,7 +105,7 @@ nav ul {
 
 .nav-list li {
   /* outline: 1px solid green; */
-  outline: 1px solid;
+  /* outline: 1px solid; */
   margin: 2rem 0;
 }
 
@@ -130,7 +130,7 @@ nav.nav-change {
   overflow: hidden;
   width: 100%;
 
-  background: red;
+  background: white;
 
   left: 0;
   padding: 3.85rem 1rem 1rem;
