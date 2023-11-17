@@ -119,6 +119,11 @@ nav ul {
   color: #000;
 }
 
+.nav-init {
+    background-color: inherit;
+    transition: 0.3s ease-in-out;
+}
+
 .nav-change {
   position: absolute;
   overflow: hidden;
