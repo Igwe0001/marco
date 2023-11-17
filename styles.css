@@ -9,6 +9,8 @@
 :root {
   --banner-background: #722257;
   --banner-text: #cdb5a7;
+
+  --vertical-transform: 100%;
 }
 
 html {
@@ -27,6 +29,10 @@ body {
 }
 
 /* header-banner */
+.navigation-button {
+  cursor: pointer;
+}
+
 .navigation-button span {
   font-size: 3rem;
 }
@@ -110,27 +116,37 @@ nav ul {
 
 .shopping-bag span {
   font-size: 3rem;
+  color: #000;
 }
 
-nav {
+.nav-change {
   position: absolute;
-
+  overflow: hidden;
   width: 100%;
 
   background: red;
 
   left: 0;
-  padding: 2rem;
+  padding: 3.85rem 1rem 1rem;
   height: 100%;
-
+  transition: 0.3s ease-in-out;
   top: 0;
 }
 
-nav ul {
+.ul-change {
   position: absolute;
   top: 50%;
   left: 50%;
+  transform: translate(-50%, 100%);
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.3s ease-out;
+}
+
+.ul-transform {
   transform: translate(-50%, -50%);
+  visibility: visible;
+  opacity: 1;
 }
 
 /* Media query  */
