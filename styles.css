@@ -74,7 +74,7 @@ main {
 }
 
 .banner-info > span {
-  font-size: clamp(1.15rem, 2.5vw, 1.6rem);
+  font-size: clamp(1.3rem, 2.5vw, 1.6rem);
   color: var(--banner-text);
 }
 
@@ -99,7 +99,6 @@ header {
 }
 
 nav {
-  /* outline: 1px solid; */
   max-width: 150rem;
   margin: auto;
   display: flex;
@@ -111,21 +110,16 @@ nav ul {
   display: flex;
   flex-direction: column;
   width: 100%;
-  /* justify-content: space-between; */
-  /* outline: 1px solid red; */
   align-items: center;
 }
 
 .nav-list {
   display: flex;
   flex-direction: column;
-  /* outline: 1px solid blue; */
   align-items: center;
 }
 
 .nav-list li {
-  /* outline: 1px solid green; */
-  /* outline: 1px solid; */
   margin: 2rem 0;
   cursor: pointer;
 }
@@ -202,12 +196,12 @@ ul {
 
 /* Footer */
 .footer-links {
-  /* outline: 1px solid; */
   padding: 1rem;
 }
 
 .footer-links li a {
   padding: 1rem;
+  font-size: 2rem;
   display: block;
   color: #000;
 }
