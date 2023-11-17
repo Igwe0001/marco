@@ -8,6 +8,15 @@ const nav = document.querySelector("nav");
 const bannerButton = document.querySelector(".banner-button");
 const banner = document.querySelector(".banner-container");
 
+//Year
+const copyright = document.querySelector('.copyright > span')
+const getYear = new Date().getFullYear()
+
+//Year function
+copyright.innerHTML = getYear 
+
+
+//Nav control
 navButton.addEventListener("click", () => {
   if (navButtonSpan.innerText === "menu") {
     navButtonSpan.innerText = "close";
@@ -19,7 +28,7 @@ navButton.addEventListener("click", () => {
 });
 
 
-
+//Banner button control
 bannerButton.addEventListener("click", () => {
   banner.classList.add("banner-close");
 });
