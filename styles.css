@@ -220,9 +220,8 @@ ul {
 }
 
 .footer-logo img {
-  width: 50%;
+  width: 100%;
   max-width: 70rem;
-  min-width: 25rem;
 }
 
 footer {
