@@ -177,6 +177,39 @@ ul {
   opacity: 1;
 }
 
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  background-color: var(--banner-background);
+  border: 1px solid var(--banner-background);
+  border-radius: 0.5rem;
+  z-index: 1;
+  width: 50%;
+  text-align: center;
+  left: 25%;
+}
+
+.dropdown-menu li {
+  display: block;
+  margin: 0;
+}
+
+.dropdown-menu a {
+  padding: 10px;
+  color: var(--banner-text);
+  width: 100%;
+  display: inline-block;
+}
+
+.dropdown-menu a:hover {
+  background-color: var(--banner-text);
+  color: var(--banner-background);
+}
+
 /* ................... */
 
 /* logo */
@@ -258,6 +291,11 @@ footer {
   .nav-list a {
     font-size: 1.6rem;
   }
+
+.dropdown-menu {
+    left: initial;
+    width: 20rem;
+}
 
   .footer-links {
     flex-direction: row;
